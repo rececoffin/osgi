@@ -4,6 +4,9 @@
     <!--name. It will then create a (single) instance of the TrialDivisionProvider class and "advertise"-->
     <!--it as provider of the Factorizer service. The provided service can be referred to by its ID, "trial".-->
     <service id="trial" interface="api.Factorizer">
+        <service-properties>
+            <entry key="name" value="trial-division"/>
+        </service-properties>
         <bean class="trial.TrialDivisionProvider"/>
     </service>
 </blueprint>
