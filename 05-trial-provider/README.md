@@ -72,7 +72,14 @@ Look for something like this:
 ```
 
 #### Step 7.5 - Add some extra information to the service registration. 
-Create a key-value pair. Make the key `name` and the value `trial-division`. 
+Create a key-value pair. Make the key `name` and the value `trial-division`. Add
+the following to the `service` element in the blueprint file:
+
+```xml
+<service-properties>
+            <entry key="name" value="trial-division"/>
+</service-properties>
+```
 
 Check it with the command `services -p trial`.
 
